@@ -1,0 +1,164 @@
+body{
+   
+
+    background-color:#001829;
+     color: #ffff;
+}
+
+
+.conteiner{     
+
+    
+    text-align: center;
+    
+}
+
+
+.desk-game{
+    background: rgb(0,131,168);
+    background: linear-gradient(90deg, rgba(0,131,168,1) 7%, rgba(61,189,204,1) 20%, rgba(41,176,186,1) 36%, rgba(24,194,214,1) 51%, rgba(2,140,166,1) 68%, rgba(28,153,201,1) 83%, rgba(14,176,209,1) 100%);
+    border-radius: 15px;
+    border: solid 2px rgb(0,131,168) ;
+    width: 900px;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+
+}
+
+
+
+
+
+ 
+@keyframes iniciar {
+    20%,90%{
+        font-size: 25px;
+        color: white;
+        border: solid 2px rgb(2,204,186);
+        background-color: rgb(2,204,186);
+        transition: 0.3s ease;
+        transform: rotateY(180deg)
+            }
+    0%,100%{
+
+        transform: rotateY(0deg);
+    }
+} 
+
+
+
+
+.nuevo-juego{
+font-size: 35px;
+color: rgb(255, 255, 255);
+border: solid 2px rgb(255, 255, 255);
+background-color: #7f5af0;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 250px;
+margin: 20px auto ;
+cursor: pointer;
+
+
+}
+
+.area-tarjeta, .tarjeta, .cara{
+
+    width: 170px;
+    height: 170px;
+    min-width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* font-size: 500px; */
+}
+
+.tarjeta{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: ease  1s; 
+    animation: iniciar 3s;
+
+}
+
+  
+
+.cara{
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+
+
+.trasera{
+
+    border: solid 2px rgb(46,61,73); 
+    background-color: rgb(46,61,73);
+    border-radius: 10px;
+    
+    
+}
+
+.frente{
+    border: solid 3px rgb(255, 255, 255);
+    background-color: rgb(226, 249, 247);
+    color: black;
+    border-radius: 10px;
+    transform: rotateY(180deg); 
+    font-size: 60px;
+    
+    
+}
+
+/* --------------------------------- */
+
+.scoregame{
+    display: flex;
+    width: 260px;
+    margin: 15px auto 25px auto;
+    text-align: center;
+    justify-content: center;
+    border: solid 2px black;
+    color: azure;
+    background-color: #7f5af0;
+    border-radius: 12px;
+    font-size: 40px;
+    
+}
+
+
+			
+#timer , #count{
+    
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.contenedor-score{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
