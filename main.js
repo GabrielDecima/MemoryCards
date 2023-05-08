@@ -4,9 +4,10 @@ let CantidadTarjetas = 16;
 let contador=60;
 
 
-
 generarTablero()
 startTimer()
+
+
 
 
 
@@ -204,7 +205,6 @@ var seconds = 0;
           ":" +
           (seconds > 9 ? seconds : "0" + seconds);
         document.getElementById("timer").innerHTML = "Tiempo de juego: " + timeString;}
-
 
 
 
